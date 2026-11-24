@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заявка на площадку — Конференция.РФ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <div class="box top-box">
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="assets/logo.svg" alt="Логотип">
+        <p class="name">Конференция.РФ</p>
+      </a>
+
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#places">Площадки</a>
+        <a href="#footer">Контакты</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="box">
+    <section class="form-card">
+      <h1 class="form-title">Заявка на площадку</h1>
+      <p class="sub">Заполните основные параметры бронирования.</p>
+
+      <form action="#" method="get">
+        <label for="venue">Площадка</label>
+        <select class="input" id="venue" name="venue" required>
+          <option value="">Выберите площадку</option>
+          <option value="auditorium">Аудитория — до 40 человек</option>
+          <option value="coworking">Коворкинг — до 25 человек</option>
+          <option value="cinema">Кинозал — до 120 человек</option>
+        </select>
+
+        <label for="event-date">Дата мероприятия</label>
+        <input class="input" id="event-date" name="event-date" type="date" required>
+
+        <p class="label">Способ оплаты</p>
+        <label class="radio"><input type="radio" name="payment" value="card" required> Банковская карта</label>
+        <label class="radio"><input type="radio" name="payment" value="invoice"> По счёту для организации</label>
+
+        <button class="btn send" type="submit">Оформить заявку</button>
+      </form>
+
+      <p class="note">Форма предназначена для демонстрации интерфейса. Серверная обработка не подключена.</p>
+      <a class="back" href="index.html#places">Посмотреть площадки</a>
+    </section>
+  </main>
+
+  <footer class="bottom" id="footer">
+    <div class="box bottom-box">
+      <p>© Конференции.РФ · Учебный проект</p>
+      <a href="mailto:info@conference.example">info@conference.example</a>
+    </div>
+  </footer>
+
+</body>
+</html>

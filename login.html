@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход - Конференция.РФ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <div class="box top-box">
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="assets/logo.svg" alt="Логотип">
+        <p class="name">Конференция.РФ</p>
+      </a>
+
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#places">Площадки</a>
+        <a href="#footer">Контакты</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="box">
+    <section class="form-card">
+      <h1 class="form-title">Вход в аккаунт</h1>
+      <p class="sub">Введите логин и пароль, указанные при регистрации.</p>
+
+      <form action="#" method="get">
+        <label for="login">Логин</label>
+        <input class="input" id="login" name="login" type="text" placeholder="Ваш логин" required>
+
+        <label for="password">Пароль</label>
+        <input class="input" id="password" name="password" type="password" placeholder="Ваш пароль" required>
+
+        <button class="btn send" type="submit">Войти</button>
+      </form>
+
+      <p class="note">Демонстрационная форма: данные никуда не отправляются.</p>
+      <a class="back" href="index.html">Вернуться на главную</a>
+    </section>
+  </main>
+
+  <footer class="bottom" id="footer">
+    <div class="box bottom-box">
+      <p>© Конференции.РФ · Учебный проект</p>
+      <a href="mailto:info@conference.example">info@conference.example</a>
+    </div>
+  </footer>
+
+</body>
+</html>
